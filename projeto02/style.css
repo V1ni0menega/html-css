@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Courier New', Courier, monospace;
+}
+body {
+    line-height: 1.6;
+    background-color: #fefefe;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0; /* espaço interno ao invés de margin inválida */
+}
+header > h1 {
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+section > p{
+    padding-bottom: 2em;
+
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+   
+}
+section.normal {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 60px;
+    background-attachment: fixed;
+}
+
+section.normal p {
+    text-shadow: 1px 1px 0px black;
+    background-color: rgba(20, 20, 20, 0.4);
+    color: white;
+    width: 400px;
+    
+}
+  
+section.imagem {
+    background-color: rgb(255, 253, 253);
+    color: white;
+    box-shadow: inset 6px 6px 12px 0px black;
+    background-position: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    padding: 5px;
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+section#img001 {
+    background-image: url(fotos/background001.jpg);
+    background-size: right center;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+section#img002{
+    background-image: url(fotos/background002.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}

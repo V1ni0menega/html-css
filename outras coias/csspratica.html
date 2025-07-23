@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interações CSS - Exemplos Visuais</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 30px;
+    }
+    h1 {
+      color: #a33;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+    .card:hover {
+      background-color: #ffeaea;
+      transform: scale(1.05);
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+      background-color: #d36;
+      transition: all 0.4s ease;
+    }
+    .card:hover .shadow {
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .card:hover .round {
+      border-radius: 50%;
+    }
+    .card:hover .rotate {
+      transform: rotate(15deg);
+    }
+    .card:hover .opacity {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interações CSS Visuais</h1>
+  <div class="container">
+
+    <div class="card">
+      <h3>:hover + background</h3>
+      <div class="box"></div>
+      <p>Cor muda ao passar o mouse</p>
+    </div>
+
+    <div class="card">
+      <h3>box-shadow</h3>
+      <div class="box shadow"></div>
+      <p>Sombra aparece ao passar o mouse</p>
+    </div>
+
+    <div class="card">
+      <h3>border-radius</h3>
+      <div class="box round"></div>
+      <p>Fica circular com hover</p>
+    </div>
+
+    <div class="card">
+      <h3>transform: rotate</h3>
+      <div class="box rotate"></div>
+      <p>Gira ao passar o mouse</p>
+    </div>
+
+    <div class="card">
+      <h3>opacity</h3>
+      <div class="box opacity"></div>
+      <p>Fica transparente ao passar o mouse</p>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Projeto CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f7cac9, #fefbd8);
+      padding: 40px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      color: #b34343;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card {
+      background: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 20px;
+      text-align: center;
+    }
+    .card-body h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .card-body p {
+      color: #555;
+      font-size: 0.95em;
+      line-height: 1.4em;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #b34343;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #922b2b;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Mini Projeto CSS: Cards de Exemplo</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://source.unsplash.com/random/300x180?nature" alt="Imagem aleatória">
+      <div class="card-body">
+        <h3>Natureza</h3>
+        <p>Este card demonstra sombra, espaçamento, arredondamento e interações visuais.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/random/300x180?tech" alt="Imagem aleatória">
+      <div class="card-body">
+        <h3>Tecnologia</h3>
+        <p>Com uso de <code>:hover</code> e <code>transition</code> para suavidade nos efeitos.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/random/300x180?city" alt="Imagem aleatória">
+      <div class="card-body">
+        <h3>Cidades</h3>
+        <p>Visual responsivo com <code>flex</code> e organização modular de componentes.</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

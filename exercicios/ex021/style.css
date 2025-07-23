@@ -1,0 +1,65 @@
+body{
+    
+    font-family: Arial, sans-serif;
+    background-color: #d3a4a4;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.0em;    
+}
+h1{
+    color: #bb7a61a9;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(109, 59, 59, 0.74);
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+p{
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+a{
+    color: #c98e8e;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+}
+#modulo:hover{
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px  rgba(109, 59, 59, 0.74);
+    margin: 5px auto;
+    text-align: center;
+}
+#titulo{
+    border-radius: 50px;
+    border:6px solid #944526a9;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(109, 59, 59, 0.74);
+    margin-bottom: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.texto-bonito {
+  max-width: 600px;           /* limita largura para facilitar leitura */
+  margin: 20px auto;          /* centraliza e dá espaço em cima e embaixo */
+  padding: 15px 20px;         /* espaço interno confortável */
+  font-size: 1.1em;           /* tamanho da fonte agradável */
+  line-height: 1.6;           /* espaçamento entre linhas para leitura */
+  text-align: justify;        /* justifica texto para aparência mais limpa */
+  background-color: #924545;  /* fundo suave */
+  border-radius: 8px;         /* cantos arredondados */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+  color: #161212;                /* cor de texto confortável */
+}
+
+
