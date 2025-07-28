@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com colgroup</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #363636;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        th,td{
+            border: 1px solid #000000;
+            padding: 10px;
+            text-align: center;
+    
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+          
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .infos{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>        
+    <caption> Cadastro</caption>
+    <colgroup>
+        <col class="amarelo" >
+        <!-- pode tambem fazer por cada thead ou tambem criando um colgroup e excluindo uma coluna e colcocar um span e a quantidade de colunas que quiser espelhar-->
+        <col class="infos" span="2">
+        <col class="amarelo">
+    </colgroup>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>15</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Padero</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Auxiliar </td>
+        </tr>
+    </table>
+
+
+</body>
+</html> 

@@ -26,78 +26,82 @@
             color: #363636;
         }
 
-        th:nth-child(odd) {
-            background-color: #3c3c42;
+        thead > tr > th {
+            background-color: #3c3c42; /* Cor usada no exemplo do Guanabara */
             font-weight: bold;
             text-decoration: underline;
+            color: white; /* Cor do texto para destacar */
         }
 
-        th:nth-child(even) {
-            background-color: #3c3c42;
+        .media {
+            background-color: #3c3c42;; /* Estilo para destacar as médias */
             font-weight: bold;
-            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <table>
-        <tr>
-            <th rowspan="2">Àrea</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Médias</th>
-        </tr>
-        <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
-        </tr>
-        <tr>
-            <th rowspan="4">Exatas</th>
-            <td colspan="1">Matemática</td>
-            <td>8.0</td>
-            <td>8.0</td>
-            <td colspan="1">0.0</td>
-
-        </tr>
-        <tr>
-            <td>Fisica</td>
-            <td>8.0</td>
-            <td>7.5</td>
-            <td colspan="1">0.0</td>
-        </tr>
-        <tr>
-            <td>Química</td>
-            <td>7.0</td>
-            <td>8.0</td>
-            <td colspan="1">0.0 </td>
-        </tr>
-        <tr>
-            <td>Biologia</td>
-            <td>7.5</td>
-            <td>8.0</td>
-            <td colspan="1">0.0</td>
-        </tr>
-        <tr>
-            <th colspan="4">Média de Exatas</th>
-            <td>0.0</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Humanas</td>
-            <td>Histótia</td>
-            <td>9.0</td>
-            <td>9.9</td>
-            <td colspan="1">0.0</td>
-        </tr>
-        <tr>
-            <td>Geografia</td>
-            <td>8.0</td>
-            <td>8.5</td>
-            <td colspan="1">0.0</td>
-        <tr>
-            <th colspan="4">Média de Exatas</th>
-            <td>0.0</td>
-        </tr>
+        <thead> <!-- Cabeçalho da tabela agrupado semanticamente -->
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Médias</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Corpo da tabela começa aqui -->
+            <tr>
+                <td rowspan="4">Exatas</td> <!-- Corrigido de <th> para <td> (cabeçalho só no <thead>) -->
+                <td>Matemática</td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>8.0</td>
+                <td>7.5</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>7.0</td>
+                <td>8.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media"> <!-- Linha de média com estilo específico -->
+                <td colspan="4">Média de Exatas</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td>História</td> <!-- Corrigido "Histótia" para "História" -->
+                <td>9.0</td>
+                <td>9.9</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media">
+                <td colspan="4">Média de Humanas</td> <!-- Corrigido "Exatas" para "Humanas" -->
+                <td>0.0</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 
