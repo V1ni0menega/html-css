@@ -1,0 +1,4 @@
+{
+    // Live Server will open pages using Brave by default
+    "liveServer.settings.CustomBrowser": "brave"
+}
