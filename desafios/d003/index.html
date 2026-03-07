@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Desafio do mapa</title>
   <style>
-     p{
-          color: white;
-          text-align: justify;
+    p {
+      color: white;
+      text-align: justify;
+    }
 
-     }
     /* Estilo do título com gradiente e cor do texto */
     h1 {
       background-image: linear-gradient(to right, black, skyblue);
@@ -23,16 +23,22 @@
 
     /* Corpo com fundo responsivo que cobre toda a tela */
     body {
-      margin: 0; /* remove margem padrão para fundo cobrir toda área */
-      height: 100vh; /* altura total da viewport */
+      margin: 0;
+      /* remove margem padrão para fundo cobrir toda área */
+      height: 100vh;
+      /* altura total da viewport */
       font-family: Arial, Helvetica, sans-serif;
-
-      background-image: url('imagem\ nasa\ planeta.webp'); /* caminho corrigido */
+      background-image: url('imagem\ nasa\ planeta.webp');
+      /* caminho corrigido */
       background-repeat: no-repeat;
-      background-size: cover; /* cobre todo o espaço sem distorcer */
-      background-position: center center; /* centraliza a imagem */
-      background-attachment: fixed; /* fundo fixo quando rolar */
+      background-size: cover;
+      /* cobre todo o espaço sem distorcer */
+      background-position: center center;
+      /* centraliza a imagem */
+      background-attachment: fixed;
+      /* fundo fixo quando rolar */
     }
+
     /* Conteúdo com fundo cinza e centralizado */
     .content {
       padding: 20px;
@@ -48,41 +54,43 @@
       height: auto;
       border-radius: 4px;
       border: 1px solid #ccc;
-}
-    .mapa{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  gap: 0;
-}
+    }
 
-.mapa img{
-  width: 200px;
-  height: auto;
-}
+    .mapa {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+      gap: 0;
+    }
 
+    .mapa img {
+      width: 200px;
+      height: auto;
+    }
   </style>
 </head>
 
 <body>
-<h1>Projeto</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore repellat tempora ex. Aspernatur, laudantium illo id quod consectetur cum ea voluptate corporis maxime, debitis aliquam, atque facere sed nemo. <br>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus tempore eligendi mollitia numquam. Minima eaque sint animi quis provident quidem quae rem quia ad natus pariatur, itaque reiciendis beatae voluptas. <br>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, temporibus. Nam accusamus dicta repudiandae fuga a delectus, quidem placeat labore ipsa quam neque illo molestias assumenda magnam consectetur dolores hic. <br>
-</p>
-  <h2>Desafio do mapa</h2>
-     </p>
-      <div class="mapa">
-        <img src="imagens/mapa03.png" alt="Mapa 03" />
-        <img src="imagens/mapa07.png" alt="Mapa 07" />
-        <img src="imagens/mapa05.png" alt="">
-        <img src="imagens/mapa09.png" alt="Mapa 09" />
-        <img src="imagens/mapa01.png" alt="Mapa 01" />
-        <img src="imagens/mapa08.png" alt="Mapa 08" />
-        <img src="imagens/mapa06.png" alt="Mapa 06" />
-        <img src="imagens/mapa02.png" alt="Mapa 02" />
-        <img src="imagens/mapa04.png" alt="Mapa 04" />
-      </div>
-</body>
+  <h1>Projeto</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore repellat tempora ex. Aspernatur, laudantium illo
+    id quod consectetur cum ea voluptate corporis maxime, debitis aliquam, atque facere sed nemo. <br>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus tempore eligendi mollitia numquam. Minima eaque
+    sint animi quis provident quidem quae rem quia ad natus pariatur, itaque reiciendis beatae voluptas. <br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, temporibus. Nam accusamus dicta repudiandae fuga a
+    delectus, quidem placeat labore ipsa quam neque illo molestias assumenda magnam consectetur dolores hic. <br>
+  </p>
 
+  <h2>Desafio do mapa</h2>
+  <div class="mapa">
+    <img src="imagens/mapa03.png" alt="Mapa 03" />
+    <img src="imagens/mapa07.png" alt="Mapa 07" />
+    <img src="imagens/mapa05.png" alt="">
+    <img src="imagens/mapa09.png" alt="Mapa 09" />
+    <img src="imagens/mapa01.png" alt="Mapa 01" />
+    <img src="imagens/mapa08.png" alt="Mapa 08" />
+    <img src="imagens/mapa06.png" alt="Mapa 06" />
+    <img src="imagens/mapa02.png" alt="Mapa 02" />
+    <img src="imagens/mapa04.png" alt="Mapa 04" />
+  </div>
+</body>
 </html>
