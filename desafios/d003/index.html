@@ -33,22 +33,10 @@
       background-position: center center; /* centraliza a imagem */
       background-attachment: fixed; /* fundo fixo quando rolar */
     }
-
-    /* Container que centraliza conteúdo vertical e horizontalmente */
-    .container {
-      position: relative;
-      min-height: 50vh; /* mínimo 50% da altura da tela */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
     /* Conteúdo com fundo cinza e centralizado */
     .content {
       padding: 20px;
       border-radius: 8px;
-      text-align: center;
       max-width: 600px;
       width: 90%;
     }
@@ -60,49 +48,41 @@
       height: auto;
       border-radius: 4px;
       border: 1px solid #ccc;
-    }
+}
+    .mapa{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 0;
+}
+
+.mapa img{
+  width: 200px;
+  height: auto;
+}
 
   </style>
 </head>
 
 <body>
-  <h1>Desafio do mapa</h1>
-
-  <div class="container">
-    <div class="content">
-     <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus mollitia a excepturi ratione distinctio voluptate dolorem quidem nesciunt earum voluptatum voluptates, eveniet quaerat qui assumenda totam possimus. Necessitatibus, eos.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illum assumenda dicta quasi aliquam, deserunt sint nihil officiis ipsum alias maxime beatae amet saepe dignissimos possimus nostrum veniam nemo vitae!
+<h1>Projeto</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore repellat tempora ex. Aspernatur, laudantium illo id quod consectetur cum ea voluptate corporis maxime, debitis aliquam, atque facere sed nemo. <br>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus tempore eligendi mollitia numquam. Minima eaque sint animi quis provident quidem quae rem quia ad natus pariatur, itaque reiciendis beatae voluptas. <br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, temporibus. Nam accusamus dicta repudiandae fuga a delectus, quidem placeat labore ipsa quam neque illo molestias assumenda magnam consectetur dolores hic. <br>
+</p>
+  <h2>Desafio do mapa</h2>
      </p>
-      <img src="mapa03.png" alt="Mapa 03" />
-      <img src="mapa07.png" alt="Mapa 07" />
-      <img src="mapa05.png" alt="Mapa 05" />
-
-      <img src="mapa09.png" alt="Mapa 09" />
-      <img src="mapa01.png" alt="Mapa 01" />
-      <img src="mapa08.png" alt="Mapa 08" />
-
-      <img src="mapa06.png" alt="Mapa 06" />
-      <img src="mapa02.png" alt="Mapa 02" />
-      <img src="mapa04.png" alt="Mapa 04" />
-    </div>
-  </div>
+      <div class="mapa">
+        <img src="imagens/mapa03.png" alt="Mapa 03" />
+        <img src="imagens/mapa07.png" alt="Mapa 07" />
+        <img src="imagens/mapa05.png" alt="">
+        <img src="imagens/mapa09.png" alt="Mapa 09" />
+        <img src="imagens/mapa01.png" alt="Mapa 01" />
+        <img src="imagens/mapa08.png" alt="Mapa 08" />
+        <img src="imagens/mapa06.png" alt="Mapa 06" />
+        <img src="imagens/mapa02.png" alt="Mapa 02" />
+        <img src="imagens/mapa04.png" alt="Mapa 04" />
+      </div>
 </body>
 
 </html>
