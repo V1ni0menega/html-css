@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    text-align: justify;
+    text-indent: 20px;
+    background-color: #bf8578;
+    font-family: 12pxs , Arial, Helvetica, sans-serif
+    
+}
+
+h1 {
+    color: #a95e36;
+    background-color: greenyellow;
+    background-image: radial-gradient(circle, #F25C69, #F58E29);
+}
+
+h1#principal{
+    text-align: center;
+    background-image: linear-gradient(to left, white);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px  5px  5px rgba(0, 0, 0, 0.679);
+}
+
+h2 {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #F58E29;
+    color: #a96c4b;
+}
+
+.basico{
+    color: green;
+    font: bold
+
+}
+
+.intermediario{
+    color: purple;
+}
+
+.avancado{
+    color: red;
+
+}
